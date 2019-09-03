@@ -1,0 +1,17 @@
+{% extends '../layouts/layout.html' %}
+{% block title %} 列表 {% endblock %}
+{% block content %}
+{% block %}
+  <link rel="stylesheet" href="/style/index.css">
+{% endblock %}
+  <div>
+    <h1>qwdqwdwe</h1>
+    <button class='btn'>buttons</button>
+    {% for item in result.data %}
+    	<div><span>[[item.author]]</span><span>[[item.name]]</span></div>     
+    {% endfor %} 
+  <div>
+  {% block scripts %}
+    <script type="module" src="/js/index.js"></script>
+  {% endblock %}  
+{% endblock %}
