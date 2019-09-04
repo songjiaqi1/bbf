@@ -12,7 +12,6 @@ class BooksController {
     }
     async actionIndex(ctx, next) {
       const model = new Books();
-      
       const result = await model.getList();
       ctx.body = await ctx.render('books/list', {
         result: result
